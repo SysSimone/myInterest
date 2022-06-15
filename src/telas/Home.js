@@ -27,6 +27,11 @@ const Home = (props) => {
             onPress={() => 
                 props.navigation.navigate("FlexBox")}
             />
+            <Button 
+            title='Flex Box1'
+            onPress={() => 
+                props.navigation.navigate("FlexBox1")}
+            />
         </View>
     );
 
@@ -38,6 +43,9 @@ const styles = StyleSheet.create({
         margin: 20,
         alignSelf: "center",
     },
+    button: {
+        flex: 1,
+    }
 });
 
 export default Home;

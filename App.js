@@ -8,6 +8,7 @@ import Home from "./src/telas/Home";
 import Details from "./src/telas/Details";
 import Position from './src/telas/Position';
 import FlexBox from './src/telas/FlexBox';
+import FlexBox1 from './src/telas/FlexBox1';
 //o App.js vai ser usado como a estrutura externa, o esqueleto do app e aqui vou armazenar 
 //os navegadores e decidir o que vai ser mostrada para o usuario.
 
@@ -23,6 +24,7 @@ const App = () => {
         <Stack.Screen name="Details" component={Details}/>
         <Stack.Screen name="Position" component={Position}/>
         <Stack.Screen name="FlexBox" component={FlexBox}/>
+        <Stack.Screen name="FlexBox1" component={FlexBox1}/>
       </Stack.Navigator>
 
     </NavigationContainer>

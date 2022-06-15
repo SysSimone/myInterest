@@ -3,20 +3,20 @@ import { View, Text, StyleSheet } from 'react-native';
 
 //A flexBox é basicamente uma caixa que contém um texto
 
-const FlexBox =() => {
-  return (
-    <View style={styles.view}>
-        <Text style={styles.caixa1}> Caixa 1 </Text>
-        <Text style={styles.caixa2}> Caixa 2 </Text>
-        <Text style={styles.caixa3}> Caixa 3 </Text>
+const FlexBox = () => {
+    return (
+        <View style={styles.view}>
+            <Text style={styles.caixa1}> Caixa 1 </Text>
+            <Text style={styles.caixa2}> Caixa 2 </Text>
+            <Text style={styles.caixa3}> Caixa 3 </Text>
 
-    </View>
-  );
+        </View>
+    );
 };
 
 
 const styles = StyleSheet.create({
-    view:{
+    view: {
         borderWidth: 10,
         borderColor: "chartreuse",
         flex: 1, // equivalente a 100% ocupa todo o espaço vazio
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         borderWidth: 5,
         borderColor: "green",
-       // alignSelf: "center",
+        // alignSelf: "center",
         flex: 0.3, // equivalente a 30% do espaço vazio
 
     }, // até aqui 50% do espaço vazio foi ocupado

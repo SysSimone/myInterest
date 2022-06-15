@@ -1,18 +1,24 @@
 import React from "react";
-import {View, Text, StyleSheet} from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-const Position = () => {
+
+const Position = (props) => {
     return (
-<View style={style.container}>
-    <View style={style.box1}/> 
-    <View style={style.box2}/> 
-    <View style={style.box3}/> 
-    <View style={style.box4}/>
-    <View style={style.box5}/>
-    <View style={style.box6}/>
-    <View style={style.box7}/>
-    <View style={style.box8}/>
-</View>
+        <View style={style.container}>
+            <View style={style.box1} />
+            <View style={style.box2} />
+            <View style={style.box3} />
+            <View style={style.box4} />
+            <View style={style.box5} />
+            <View style={style.box6} />
+            <View style={style.box7} />
+            <View style={style.box8} />
+           
+            
+
+            
+        </View>
+        
 
 
     );
@@ -20,38 +26,38 @@ const Position = () => {
 
 const style = StyleSheet.create({
     container: {
-        flex: 0.1,
-        padding:200,
+        flex: 0.5,
+        padding: 200,
         backgroundColor: "yellow",
     },
-    box1:{
+    box1: {
         width: 400,
         height: 400,
-       // padding:50,
+        // padding:50,
         backgroundColor: "red",
         position: "absolute",
     },
     box2: {
         width: 380,
         height: 380,
-       // padding: 80,
+        // padding: 80,
         backgroundColor: "green",
         position: "absolute",
     },
     box3: {
         width: 360,
         height: 360,
-       // padding:50,
+        // padding:50,
         backgroundColor: "blue",
         position: "absolute",
-//quando definimos a position absolute, a view que esta com posição relativa que foi definida primeiro
-//fica posicionado no fundo e as definidos como position absolute ele sobrepoe as outras views 
+        //quando definimos a position absolute, a view que esta com posição relativa que foi definida primeiro
+        //fica posicionado no fundo e as definidos como position absolute ele sobrepoe as outras views 
     },
     box4: {
         width: 320,
         height: 320,
         backgroundColor: "pink",
-       position: "absolute",
+        position: "absolute",
     },
     box5: {
         width: 280,
@@ -69,7 +75,7 @@ const style = StyleSheet.create({
         width: 200,
         height: 200,
         backgroundColor: "white",
-       position: "absolute",
+        position: "absolute",
     },
     box8: {
         width: 180,
@@ -77,8 +83,23 @@ const style = StyleSheet.create({
         backgroundColor: "grey",
         position: "absolute",
     },
+    button: {
+        width: 50, //largura
+        height: 30 //altura
 
-
-
-});
+    },
+   
+        container: {
+         flex: 1,
+         justifyContent: 'center',
+        },
+        buttonContainer: {
+          margin: 20
+        },
+        alternativeLayoutButtonContainer: {
+          margin: 20,
+          flexDirection: 'row',
+          justifyContent: 'space-between'
+        }
+      });
 export default Position;
