@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-const Detail = (props) => {
+const Details = (props) => {
     //console.log(props);
     return (
         <View>
@@ -22,5 +22,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Detail;
-s
+export default Details;

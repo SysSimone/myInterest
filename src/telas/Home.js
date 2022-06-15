@@ -15,12 +15,17 @@ const Home = (props) => {
             <Button
             title='Box Model' 
             onPress={() => 
-                props.navigation.navigate("Detail")} 
+                props.navigation.navigate("Details")} 
             />
             <Button 
             title='Position'
             onPress={() => 
                 props.navigation.navigate("Position")}
+            />
+              <Button 
+            title='Flex Box'
+            onPress={() => 
+                props.navigation.navigate("FlexBox")}
             />
         </View>
     );

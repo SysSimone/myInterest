@@ -5,8 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 import Home from "./src/telas/Home";
-import Detail from "./src/telas/Detail";
+import Details from "./src/telas/Details";
 import Position from './src/telas/Position';
+import FlexBox from './src/telas/FlexBox';
 //o App.js vai ser usado como a estrutura externa, o esqueleto do app e aqui vou armazenar 
 //os navegadores e decidir o que vai ser mostrada para o usuario.
 
@@ -19,8 +20,9 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name= "Home" component={Home}/>
-        <Stack.Screen name="Detail" component={Detail}/>
+        <Stack.Screen name="Details" component={Details}/>
         <Stack.Screen name="Position" component={Position}/>
+        <Stack.Screen name="FlexBox" component={FlexBox}/>
       </Stack.Navigator>
 
     </NavigationContainer>
