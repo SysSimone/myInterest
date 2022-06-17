@@ -1,51 +1,92 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import { View, Text, StyleSheet, Button, ImageBackground } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 //Toda tela é uma função, e por ser uma função nós conseguimos enviar e receber parametros através dessas funções
 //nessa tela por exemplo, o StackNavigator esta enviando para a Tela Home e a Tela Detail, parametros, e eu os recebo
 //criando um parametro de props, todos argumentos enviados para as telas vão ser armazenados no props.
-
+const linda = '../assets/imagens/EstherL.jpg'
+const Separator = () => (
+    <View style={styles.separator} />
+  );
 const Home = (props) => {
-    //console.log(props);
+   
     return (
-        <View style={styles.view}>
+        
+        <View style={styles.container}>
+            <StatusBar style={"#ffff"}/>
+        <ImageBackground
+            source={require(linda)}
+            style={styles.imagemFundo}
+        >
+            <View style={{justifyContent:'center', width:200, height:600}}>
             <Text style={styles.text}>
-                 Box Model
-                  </Text>
+                Esther Victória!!
+            </Text>
+            </View>
+            <Separator />
+            <View>
             <Button
-            title='Box Model' 
-            onPress={() => 
-                props.navigation.navigate("Details")} 
+                title='Box Model'
+                style={styles.button}
+                onPress={() =>
+                    props.navigation.navigate("Details")}
             />
-            <Button 
-            title='Position'
-            onPress={() => 
-                props.navigation.navigate("Position")}
+            </View>
+            
+            <Separator />
+            <Button
+                title='Position'
+                style={styles.button}
+                onPress={() =>
+                    props.navigation.navigate("Position")}
             />
-              <Button 
-            title='Flex Box'
-            onPress={() => 
-                props.navigation.navigate("FlexBox")}
+            <Separator />
+            <Button
+                title='Flex Box'
+                style={styles.button}
+                onPress={() =>
+                    props.navigation.navigate("FlexBox")}
             />
-            <Button 
-            title='Flex Box1'
-            onPress={() => 
-                props.navigation.navigate("FlexBox1")}
+            <Separator />
+            <Button
+                title='Flex Box1'
+                style={styles.button}
+                onPress={() =>
+                    props.navigation.navigate("FlexBox1")}
             />
+              
+        </ImageBackground>
         </View>
+
     );
 
 };
 
 const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        width:"100%",
+    },
     text: {
         fontSize: 30,
+        color: 'pink',
         margin: 20,
         alignSelf: "center",
+        
     },
-    button: {
-        flex: 1,
-    }
+    
+    imagemFundo:{
+        flex:1,
+        resizeMode: "cover",
+        width:"100%",
+       
+    },
+    button:{
+        flex:1,
+        width:"80%",
+       height:"100%",
+       },
 });
 
 export default Home;

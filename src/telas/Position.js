@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Button } from "react-native";
 
 
 const Position = (props) => {
+    //console.log(props);
     return (
         <View style={style.container}>
             <View style={style.box1} />
@@ -12,18 +13,10 @@ const Position = (props) => {
             <View style={style.box5} />
             <View style={style.box6} />
             <View style={style.box7} />
-            <View style={style.box8} />
-           
-            
-
-            
+            <View style={style.box8} />            
         </View>
-        
-
-
     );
 };
-
 const style = StyleSheet.create({
     container: {
         flex: 0.5,
@@ -86,10 +79,8 @@ const style = StyleSheet.create({
     button: {
         width: 50, //largura
         height: 30 //altura
-
     },
-   
-        container: {
+           container: {
          flex: 1,
          justifyContent: 'center',
         },
