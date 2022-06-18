@@ -6,9 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 //nessa tela por exemplo, o StackNavigator esta enviando para a Tela Home e a Tela Detail, parametros, e eu os recebo
 //criando um parametro de props, todos argumentos enviados para as telas vão ser armazenados no props.
 const linda = '../assets/imagens/EstherL.jpg'
-const Separator = () => (
-    <View style={styles.separator} />
-  );
+
 const Home = (props) => {
    
     return (
@@ -19,12 +17,12 @@ const Home = (props) => {
             source={require(linda)}
             style={styles.imagemFundo}
         >
-            <View style={{justifyContent:'center', width:200, height:600}}>
+            <View style={{justifyContent:'center', width:200, height:500}}>
             <Text style={styles.text}>
                 Esther Victória!!
             </Text>
             </View>
-            <Separator />
+            
             <View>
             <Button
                 title='Box Model'
@@ -34,26 +32,32 @@ const Home = (props) => {
             />
             </View>
             
-            <Separator />
+           
             <Button
                 title='Position'
                 style={styles.button}
                 onPress={() =>
                     props.navigation.navigate("Position")}
             />
-            <Separator />
+           
             <Button
                 title='Flex Box'
                 style={styles.button}
                 onPress={() =>
                     props.navigation.navigate("FlexBox")}
             />
-            <Separator />
+          
             <Button
                 title='Flex Box1'
                 style={styles.button}
                 onPress={() =>
                     props.navigation.navigate("FlexBox1")}
+            />
+            <Button
+                title='ListaCategorias'
+                style={styles.button}
+                onPress={() =>
+                    props.navigation.navigate("ListaCategorias")}
             />
               
         </ImageBackground>

@@ -76,21 +76,6 @@ const style = StyleSheet.create({
         backgroundColor: "grey",
         position: "absolute",
     },
-    button: {
-        width: 50, //largura
-        height: 30 //altura
-    },
-           container: {
-         flex: 1,
-         justifyContent: 'center',
-        },
-        buttonContainer: {
-          margin: 20
-        },
-        alternativeLayoutButtonContainer: {
-          margin: 20,
-          flexDirection: 'row',
-          justifyContent: 'space-between'
-        }
+      
       });
 export default Position;
