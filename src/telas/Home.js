@@ -54,11 +54,12 @@ const Home = (props) => {
                     props.navigation.navigate("FlexBox1")}
             />
             <Button
-                title='ListaCategorias'
+                title='Imagem'
                 style={styles.button}
                 onPress={() =>
-                    props.navigation.navigate("ListaCategorias")}
+                    props.navigation.navigate("Imagem")}
             />
+           
               
         </ImageBackground>
         </View>
