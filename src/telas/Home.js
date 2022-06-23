@@ -59,6 +59,12 @@ const Home = (props) => {
                 onPress={() =>
                     props.navigation.navigate("Imagem")}
             />
+            <Button
+                title='Scroll'
+                style={styles.button}
+                onPress={() =>
+                    props.navigation.navigate("Scroll")}
+            />
            
               
         </ImageBackground>
