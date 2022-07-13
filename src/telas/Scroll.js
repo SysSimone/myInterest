@@ -20,6 +20,19 @@ const Scroll = () => {
         <View style={styles.caixa5}/>
         <View style={styles.caixa6}/>
       </ScrollView>
+      <ScrollView 
+      decelerationRate="normal"
+      horizontal
+      pagingEnabled={true}
+      >
+      
+        <View style={styles.caixa1}/>
+        <View style={styles.caixa2}/>
+        <View style={styles.caixa3}/>
+        <View style={styles.caixa4}/>
+        <View style={styles.caixa5}/>
+        <View style={styles.caixa6}/>
+      </ScrollView>
 
     </View>
   );

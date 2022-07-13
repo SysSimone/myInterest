@@ -65,6 +65,12 @@ const Home = (props) => {
                 onPress={() =>
                     props.navigation.navigate("Scroll")}
             />
+            <Button
+                title='Flat_List'
+                style={styles.button}
+                onPress={() =>
+                    props.navigation.navigate("Flat_List")}
+            />
            
               
         </ImageBackground>
